@@ -1,0 +1,110 @@
+{
+  "projectExportManifest": {
+    "exportUploads": false,
+    "exportAllInputDatasets": false,
+    "exportAllDatasets": false,
+    "exportManagedFS": false,
+    "exportAnalysisModels": false,
+    "exportSavedModels": false,
+    "exportModelEvaluationStores": false,
+    "exportProjectResources": false,
+    "exportLabelingTasks": false,
+    "exportManagedFolders": false,
+    "exportAllInputManagedFolders": false,
+    "exportKnowledgeBank": false,
+    "exportInsightsData": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "includedModelEvaluationStores": [],
+    "includedCodeStudios": [],
+    "includedKnowledgeBanks": [],
+    "includedLabelingTasks": [],
+    "exportGitRepository": false
+  },
+  "instanceFeatures": {
+    "showFlowNavLink": false,
+    "showLabNavLink": false,
+    "showCodeNavLink": false,
+    "showSwitchToProjectViewButton": true,
+    "showVersionControlFeatures": false
+  },
+  "useAppHomepage": true,
+  "homepageSections": [],
+  "label": "sample_app_select_annotations",
+  "shortDesc": "The template *sample_app_select_annotations* was created by cristian.mankoc on May 13th 2024",
+  "tags": [],
+  "useAsRecipeSettings": {
+    "icon": "icon-dku-application-as-recipe",
+    "inputRoles": [],
+    "outputRoles": [],
+    "variablesEditionTile": {
+      "behavior": "MODAL",
+      "params": [
+        {
+          "name": "variable1",
+          "type": "STRING",
+          "label": "nice label in the form",
+          "description": "Help text for the variable",
+          "mandatory": false,
+          "canSelectForeign": false,
+          "markCreatedAsBuilt": false,
+          "allowDuplicates": true,
+          "getChoicesFromPython": false,
+          "triggerParameters": [],
+          "disableAutoReload": false,
+          "canCreateDataset": false,
+          "wt1Loggable": false
+        },
+        {
+          "name": "variable2",
+          "type": "INT",
+          "label": "another label",
+          "mandatory": false,
+          "canSelectForeign": false,
+          "markCreatedAsBuilt": false,
+          "allowDuplicates": true,
+          "getChoicesFromPython": false,
+          "triggerParameters": [],
+          "disableAutoReload": false,
+          "canCreateDataset": false,
+          "wt1Loggable": false
+        },
+        {
+          "name": "variable3",
+          "type": "SELECT",
+          "label": "some selector",
+          "mandatory": false,
+          "canSelectForeign": false,
+          "markCreatedAsBuilt": false,
+          "allowDuplicates": true,
+          "selectChoices": [
+            {
+              "value": "val1",
+              "label": "First",
+              "showInColumnPreview": false,
+              "selected": false
+            },
+            {
+              "value": "val2",
+              "label": "Second",
+              "showInColumnPreview": false,
+              "selected": false
+            }
+          ],
+          "getChoicesFromPython": false,
+          "triggerParameters": [],
+          "disableAutoReload": false,
+          "canCreateDataset": false,
+          "wt1Loggable": false
+        }
+      ]
+    },
+    "runScenarioTile": {}
+  },
+  "instantiationPermission": "USE_APP_MASTER_PERMISSIONS",
+  "limitedVisibilityEnabled": "INHERIT",
+  "accessRequestsEnabled": "INHERIT",
+  "allowedMissingConnections": [],
+  "allowedMissingCodeEnvs": []
+}
