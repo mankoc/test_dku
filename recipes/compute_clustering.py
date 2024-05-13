@@ -45,7 +45,11 @@ for cl in np.unique(clustering):
     # selected = np.random.choice(cluster_indexes, size=nelements)
     for ind in indices:
         to_review[ind] = True
-    # to_review[indices]=True
+    # to_review[indices]=Tru
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df_out=pd.DataFrame(var["id_column"])
+df_out
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Compute recipe outputs from inputs
