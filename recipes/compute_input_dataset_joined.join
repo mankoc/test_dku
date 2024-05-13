@@ -6,132 +6,183 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "postid",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "postid",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "postid",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Category",
+      "type": "string",
       "table": 0
     },
     {
       "name": "brand",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Product",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dosage form plus pack size",
+      "type": "string",
       "table": 0
     },
     {
       "name": "reviewId",
+      "type": "string",
       "table": 0
     },
     {
       "name": "postdate",
+      "type": "string",
       "table": 0
     },
     {
       "name": "reviewTitle",
+      "type": "string",
       "table": 0
     },
     {
       "name": "text",
+      "type": "string",
       "table": 0
     },
     {
       "name": "reviewUrl",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Sourcetype",
+      "type": "string",
       "table": 0
     },
     {
       "name": "rating",
+      "type": "string",
       "table": 0
     },
     {
       "name": "rawlink",
+      "type": "string",
       "table": 0
     },
     {
       "name": "newamazonlink",
+      "type": "string",
       "table": 0
     },
     {
       "name": "reviewCategoryUrl",
+      "type": "string",
       "table": 0
     },
     {
       "name": "productAsin",
+      "type": "string",
       "table": 0
     },
     {
       "name": "country",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Product ID/GTIN Nummer",
+      "type": "string",
       "table": 0
     },
     {
       "name": "User name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Recommendation",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Produktbeschreibung",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Produkt-Preis in EUR",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Tagesdosis Anzahl (Einheiten)",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Preis/Tagesdosis",
+      "type": "string",
       "table": 0
     },
     {
       "name": "EUR/Einheit (Stück,ml,100gr.)",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Anwendungsangaben",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Aktive Inhaltsstoffen (Inhaltsstoff, Anzahl, Einheit) x8",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Füllstoffen Liste getrennt mit Komma",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Bezeichnung (Vegan, Laktose-frei, Gluten-frei, Bio, 100% natürlich, keine Tierversuche)",
+      "type": "string",
       "table": 0
     },
     {
       "name": "cluster",
+      "type": "int",
       "table": 1
     },
     {
       "name": "to_annotate",
+      "type": "boolean",
       "table": 1
     }
   ],
@@ -195,5 +246,139 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "postid",
+            "type": "string"
+          },
+          {
+            "name": "Category",
+            "type": "string"
+          },
+          {
+            "name": "brand",
+            "type": "string"
+          },
+          {
+            "name": "Product",
+            "type": "string"
+          },
+          {
+            "name": "dosage form plus pack size",
+            "type": "string"
+          },
+          {
+            "name": "reviewId",
+            "type": "string"
+          },
+          {
+            "name": "postdate",
+            "type": "string"
+          },
+          {
+            "name": "reviewTitle",
+            "type": "string"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "reviewUrl",
+            "type": "string"
+          },
+          {
+            "name": "Sourcetype",
+            "type": "string"
+          },
+          {
+            "name": "rating",
+            "type": "string"
+          },
+          {
+            "name": "rawlink",
+            "type": "string"
+          },
+          {
+            "name": "newamazonlink",
+            "type": "string"
+          },
+          {
+            "name": "reviewCategoryUrl",
+            "type": "string"
+          },
+          {
+            "name": "productAsin",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "name": "Product ID/GTIN Nummer",
+            "type": "string"
+          },
+          {
+            "name": "User name",
+            "type": "string"
+          },
+          {
+            "name": "Recommendation",
+            "type": "string"
+          },
+          {
+            "name": "Produktbeschreibung",
+            "type": "string"
+          },
+          {
+            "name": "Produkt-Preis in EUR",
+            "type": "string"
+          },
+          {
+            "name": "Tagesdosis Anzahl (Einheiten)",
+            "type": "string"
+          },
+          {
+            "name": "Preis/Tagesdosis",
+            "type": "string"
+          },
+          {
+            "name": "EUR/Einheit (Stück,ml,100gr.)",
+            "type": "string"
+          },
+          {
+            "name": "Anwendungsangaben",
+            "type": "string"
+          },
+          {
+            "name": "Aktive Inhaltsstoffen (Inhaltsstoff, Anzahl, Einheit) x8",
+            "type": "string"
+          },
+          {
+            "name": "Füllstoffen Liste getrennt mit Komma",
+            "type": "string"
+          },
+          {
+            "name": "Bezeichnung (Vegan, Laktose-frei, Gluten-frei, Bio, 100% natürlich, keine Tierversuche)",
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "type": "int"
+          },
+          {
+            "name": "to_annotate",
+            "type": "boolean"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
