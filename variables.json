@@ -1,4 +1,8 @@
 {
+  "text_column": "text",
   "id_column": "postid",
-  "text_column": "text"
+  "embedding_model": "intfloat_multilingual-e5-base",
+  "n_clusters": 10,
+  "min_instances": 5,
+  "select_ratio": 0.1
 }
