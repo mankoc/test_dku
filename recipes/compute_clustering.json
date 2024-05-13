@@ -4,10 +4,11 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "text_embedding"
     },
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "NONE"
     },
     "skipPrerunValidate": false
   },
