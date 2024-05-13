@@ -8,7 +8,8 @@
       "envName": "text_embedding"
     },
     "containerSelection": {
-      "containerMode": "NONE"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "CPU-XL-2-cpu-16Gb-Ram"
     },
     "skipPrerunValidate": false
   },
