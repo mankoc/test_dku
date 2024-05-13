@@ -34,7 +34,7 @@
     "main": {
       "items": [
         {
-          "ref": "cluster_and_annotation_selections",
+          "ref": "cluster_and_annotations_selection",
           "appendMode": false
         }
       ]
