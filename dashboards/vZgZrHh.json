@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "qWZefMy",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false,
+      "enableCrossFilters": true,
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
+    }
+  ],
+  "owner": "cristian.mankoc@symanto.com",
+  "listed": true,
+  "name": "sample_app_select_annotations\u0027s default dashboard",
+  "showGrid": false,
+  "showNavigationArrows": false,
+  "reloadWhenEventReceived": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "cristian.mankoc@symanto.com"
+    },
+    "lastModifiedOn": 1715607227336,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
