@@ -63,6 +63,7 @@
   "schema": {
     "columns": [
       {"name":"postid","type":"string"},
+      {"name":"id","type":"string"},
       {"name":"Category","type":"string"},
       {"name":"brand","type":"string"},
       {"name":"Product","type":"string"},
