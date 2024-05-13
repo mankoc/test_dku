@@ -61,4 +61,4 @@ clustering_df = embeddings_df # For this sample code, simply copy input to outpu
 
 # Write recipe outputs
 clustering = dataiku.Dataset("clustering")
-clustering.write_with_schema(clustering_df)
+clustering.write_with_schema(df_out)
