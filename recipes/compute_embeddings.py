@@ -7,10 +7,11 @@ import os
 from sentence_transformers import SentenceTransformer
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-import logging
-logging.basicConfig(
-    level=logging.WARNING
-)
+# import logging
+# logging.basicConfig(
+#     level=logging.WARNING
+# )
+# logger=logging
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
@@ -22,7 +23,6 @@ client=dataiku.api_client()
 project=client.get_project(dataiku.default_project_key())
 variables=project.get_variables()
 vars=variables["standard"]
-vars
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Load pre-trained model
@@ -35,8 +35,8 @@ sentences=df["text"].to_list()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get sentences embeddings
-embeddings_df = model.encode(sentences)
-embeddings_df.shape
+embeddings = model.encode(sentences)
+embeddings.shape
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
