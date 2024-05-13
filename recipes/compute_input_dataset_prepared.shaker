@@ -29,8 +29,34 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "${id_column}",
+        "column": "id"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "${text_column}",
+        "column": "text"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +83,38 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "newamazonlink": 300,
+    "country": 100,
+    "Category": 100,
+    "Anwendungsangaben": 300,
+    "Tagesdosis Anzahl (Einheiten)": 233,
+    "rating": 100,
+    "Product": 300,
+    "Bezeichnung (Vegan, Laktose-frei, Gluten-frei, Bio, 100% natürlich, keine Tierversuche)": 300,
+    "postid": 197,
+    "reviewTitle": 239,
+    "Sourcetype": 120,
+    "User name": 141,
+    "reviewUrl": 300,
+    "Produkt-Preis in EUR": 165,
+    "Preis/Tagesdosis": 135,
+    "dosage form plus pack size": 210,
+    "text": 300,
+    "id": 197,
+    "brand": 148,
+    "Aktive Inhaltsstoffen (Inhaltsstoff, Anzahl, Einheit) x8": 300,
+    "Produktbeschreibung": 300,
+    "Product ID/GTIN Nummer": 180,
+    "postdate": 106,
+    "productAsin": 100,
+    "rawlink": 300,
+    "Recommendation": 120,
+    "Füllstoffen Liste getrennt mit Komma": 300,
+    "EUR/Einheit (Stück,ml,100gr.)": 233,
+    "reviewCategoryUrl": 300,
+    "reviewId": 267
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
