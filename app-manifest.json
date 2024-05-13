@@ -86,10 +86,12 @@
           "wt1Loggable": false
         },
         {
-          "name": "variable2",
+          "name": "n_clusters",
           "type": "INT",
-          "label": "another label",
-          "mandatory": false,
+          "label": "Number of clusters",
+          "description": "Number of clusters",
+          "defaultValue": 5.0,
+          "mandatory": true,
           "canSelectForeign": false,
           "markCreatedAsBuilt": false,
           "allowDuplicates": true,
@@ -100,27 +102,15 @@
           "wt1Loggable": false
         },
         {
-          "name": "variable3",
-          "type": "SELECT",
-          "label": "some selector",
-          "mandatory": false,
+          "name": "select_ratio",
+          "type": "DOUBLE",
+          "label": "Select ratio",
+          "description": "Ratio of clusters instances to mark as to select",
+          "defaultValue": 0.1,
+          "mandatory": true,
           "canSelectForeign": false,
           "markCreatedAsBuilt": false,
           "allowDuplicates": true,
-          "selectChoices": [
-            {
-              "value": "val1",
-              "label": "First",
-              "showInColumnPreview": false,
-              "selected": false
-            },
-            {
-              "value": "val2",
-              "label": "Second",
-              "showInColumnPreview": false,
-              "selected": false
-            }
-          ],
           "getChoicesFromPython": false,
           "triggerParameters": [],
           "disableAutoReload": false,
