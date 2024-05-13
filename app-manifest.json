@@ -36,8 +36,20 @@
   "tags": [],
   "useAsRecipeSettings": {
     "icon": "icon-dku-application-as-recipe",
-    "inputRoles": [],
-    "outputRoles": [],
+    "inputRoles": [
+      {
+        "objectId": "input_dataset",
+        "roleLabel": "Input",
+        "type": "DATASET"
+      }
+    ],
+    "outputRoles": [
+      {
+        "objectId": "cluster_and_annotations_selection",
+        "roleLabel": "Output",
+        "type": "DATASET"
+      }
+    ],
     "variablesEditionTile": {
       "behavior": "MODAL",
       "params": [
@@ -100,7 +112,9 @@
         }
       ]
     },
-    "runScenarioTile": {}
+    "runScenarioTile": {
+      "scenarioId": "UPDATE"
+    }
   },
   "instantiationPermission": "USE_APP_MASTER_PERMISSIONS",
   "limitedVisibilityEnabled": "INHERIT",
