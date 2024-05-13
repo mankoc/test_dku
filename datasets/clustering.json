@@ -61,8 +61,13 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"postid","type":"string"},
+      {"name":"text","type":"string"},
+      {"name":"cluster","type":"int"},
+      {"name":"to_annotate","type":"boolean"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
