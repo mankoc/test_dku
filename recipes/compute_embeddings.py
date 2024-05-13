@@ -35,10 +35,10 @@ sentences=df["text"].to_list()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get sentences embeddings
-embeddings = model.encode(sentences)
-embeddings.shape
+embeddings_df = model.encode(sentences)
+embeddings_df.shape
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 embeddings = dataiku.Dataset("embeddings")
-embeddings.write_with_schema(embeddings)
+embeddings.write_with_schema(embeddings_df)
