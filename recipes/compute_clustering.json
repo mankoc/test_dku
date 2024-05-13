@@ -34,7 +34,7 @@
     "main": {
       "items": [
         {
-          "ref": "output_dataset",
+          "ref": "cluster_and_annotation_selections",
           "appendMode": false
         }
       ]

@@ -54,5 +54,5 @@ df_out
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 
 # Write recipe outputs
-clustering = dataiku.Dataset("output_dataset")
+clustering = dataiku.Dataset("cluster_and_annotations_selection")
 clustering.write_with_schema(df_out)
