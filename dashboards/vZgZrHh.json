@@ -15,7 +15,7 @@
     }
   ],
   "owner": "cristian.mankoc@symanto.com",
-  "listed": false,
+  "listed": true,
   "name": "sample_app_select_annotations\u0027s default dashboard",
   "showGrid": false,
   "showNavigationArrows": false,
