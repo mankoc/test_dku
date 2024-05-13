@@ -1,0 +1,182 @@
+{
+  "type": "S3",
+  "managed": true,
+  "featureGroup": false,
+  "formatType": "parquet",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": true,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "parquetLowerCaseIdentifiers": false,
+    "representsNullFields": false,
+    "parquetCompressionMethod": "SNAPPY",
+    "parquetFlavor": "HIVE",
+    "parquetBlockSizeMB": 128
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "cristian.mankoc@symanto.com"
+    },
+    "lastModifiedOn": 1715614150683,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "bucket": "gis-data-eu-west-3",
+    "metastoreSynchronizationEnabled": true,
+    "metastoreDatabaseName": "default",
+    "metastoreTableName": "${projectKey}_input_dataset_joined",
+    "connection": "dataiku-managed-storage",
+    "path": "/managed-dss-data/${projectKey}/input_dataset_joined",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"postid","type":"string"},
+      {"name":"Category","type":"string"},
+      {"name":"brand","type":"string"},
+      {"name":"Product","type":"string"},
+      {"name":"dosage form plus pack size","type":"string"},
+      {"name":"reviewId","type":"string"},
+      {"name":"postdate","type":"string"},
+      {"name":"reviewTitle","type":"string"},
+      {"name":"text","type":"string"},
+      {"name":"reviewUrl","type":"string"},
+      {"name":"Sourcetype","type":"string"},
+      {"name":"rating","type":"string"},
+      {"name":"rawlink","type":"string"},
+      {"name":"newamazonlink","type":"string"},
+      {"name":"reviewCategoryUrl","type":"string"},
+      {"name":"productAsin","type":"string"},
+      {"name":"country","type":"string"},
+      {"name":"Product ID/GTIN Nummer","type":"string"},
+      {"name":"User name","type":"string"},
+      {"name":"Recommendation","type":"string"},
+      {"name":"Produktbeschreibung","type":"string"},
+      {"name":"Produkt-Preis in EUR","type":"string"},
+      {"name":"Tagesdosis Anzahl (Einheiten)","type":"string"},
+      {"name":"Preis/Tagesdosis","type":"string"},
+      {"name":"EUR/Einheit (Stück,ml,100gr.)","type":"string"},
+      {"name":"Anwendungsangaben","type":"string"},
+      {"name":"Aktive Inhaltsstoffen (Inhaltsstoff, Anzahl, Einheit) x8","type":"string"},
+      {"name":"Füllstoffen Liste getrennt mit Komma","type":"string"},
+      {"name":"Bezeichnung (Vegan, Laktose-frei, Gluten-frei, Bio, 100% natürlich, keine Tierversuche)","type":"string"},
+      {"name":"cluster","type":"int"},
+      {"name":"to_annotate","type":"boolean"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

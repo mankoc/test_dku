@@ -1,0 +1,199 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "postid",
+      "table": 0
+    },
+    {
+      "name": "Category",
+      "table": 0
+    },
+    {
+      "name": "brand",
+      "table": 0
+    },
+    {
+      "name": "Product",
+      "table": 0
+    },
+    {
+      "name": "dosage form plus pack size",
+      "table": 0
+    },
+    {
+      "name": "reviewId",
+      "table": 0
+    },
+    {
+      "name": "postdate",
+      "table": 0
+    },
+    {
+      "name": "reviewTitle",
+      "table": 0
+    },
+    {
+      "name": "text",
+      "table": 0
+    },
+    {
+      "name": "reviewUrl",
+      "table": 0
+    },
+    {
+      "name": "Sourcetype",
+      "table": 0
+    },
+    {
+      "name": "rating",
+      "table": 0
+    },
+    {
+      "name": "rawlink",
+      "table": 0
+    },
+    {
+      "name": "newamazonlink",
+      "table": 0
+    },
+    {
+      "name": "reviewCategoryUrl",
+      "table": 0
+    },
+    {
+      "name": "productAsin",
+      "table": 0
+    },
+    {
+      "name": "country",
+      "table": 0
+    },
+    {
+      "name": "Product ID/GTIN Nummer",
+      "table": 0
+    },
+    {
+      "name": "User name",
+      "table": 0
+    },
+    {
+      "name": "Recommendation",
+      "table": 0
+    },
+    {
+      "name": "Produktbeschreibung",
+      "table": 0
+    },
+    {
+      "name": "Produkt-Preis in EUR",
+      "table": 0
+    },
+    {
+      "name": "Tagesdosis Anzahl (Einheiten)",
+      "table": 0
+    },
+    {
+      "name": "Preis/Tagesdosis",
+      "table": 0
+    },
+    {
+      "name": "EUR/Einheit (Stück,ml,100gr.)",
+      "table": 0
+    },
+    {
+      "name": "Anwendungsangaben",
+      "table": 0
+    },
+    {
+      "name": "Aktive Inhaltsstoffen (Inhaltsstoff, Anzahl, Einheit) x8",
+      "table": 0
+    },
+    {
+      "name": "Füllstoffen Liste getrennt mit Komma",
+      "table": 0
+    },
+    {
+      "name": "Bezeichnung (Vegan, Laktose-frei, Gluten-frei, Bio, 100% natürlich, keine Tierversuche)",
+      "table": 0
+    },
+    {
+      "name": "cluster",
+      "table": 1
+    },
+    {
+      "name": "to_annotate",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "input_dataset",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "cluster_and_annotations_selection",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
