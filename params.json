@@ -9,6 +9,16 @@
   "projectType": "REGULAR",
   "projectAppType": "APP_TEMPLATE",
   "hasSetupSection": false,
+  "bundleContainerSettings": {
+    "remapping": {
+      "connections": [],
+      "codeEnvs": []
+    },
+    "codeEnvsBehavior": {
+      "envImportSpecificationMode": "SPECIFIED",
+      "importTimeMode": "INSTALL_IF_MISS"
+    }
+  },
   "owner": "cristian.mankoc@symanto.com",
   "permissionsVersion": "V2",
   "permissions": [
