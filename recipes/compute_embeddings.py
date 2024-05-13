@@ -7,6 +7,12 @@ import os
 from sentence_transformers import SentenceTransformer
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+import logging
+logging.basicConfig(
+    level=logging.WARNING
+)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
 input_dataset_prepared = dataiku.Dataset("input_dataset_prepared")
 df = input_dataset_prepared.get_dataframe()
