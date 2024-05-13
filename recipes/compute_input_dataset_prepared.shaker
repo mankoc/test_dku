@@ -46,13 +46,28 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "${text_column}",
         "column": "text"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "id",
+          "text"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
