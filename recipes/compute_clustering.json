@@ -34,7 +34,7 @@
     "main": {
       "items": [
         {
-          "ref": "clustering",
+          "ref": "output_dataset",
           "appendMode": false
         }
       ]
