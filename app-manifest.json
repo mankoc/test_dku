@@ -54,6 +54,22 @@
       "behavior": "MODAL",
       "params": [
         {
+          "name": "text_column2",
+          "type": "COLUMN",
+          "label": "Column with tex2t",
+          "description": "Column with text",
+          "mandatory": true,
+          "canSelectForeign": false,
+          "markCreatedAsBuilt": false,
+          "allowDuplicates": true,
+          "columnRole": "input_dataset",
+          "getChoicesFromPython": false,
+          "triggerParameters": [],
+          "disableAutoReload": false,
+          "canCreateDataset": false,
+          "wt1Loggable": false
+        },
+        {
           "name": "text_column",
           "type": "COLUMN",
           "label": "Column with text",
