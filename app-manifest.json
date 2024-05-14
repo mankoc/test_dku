@@ -129,7 +129,6 @@
           "canSelectForeign": false,
           "markCreatedAsBuilt": false,
           "minD": 0.01,
-          "maxD": 1.0,
           "allowDuplicates": true,
           "getChoicesFromPython": false,
           "triggerParameters": [],
