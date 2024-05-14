@@ -168,6 +168,7 @@
   },
   "name": "sample_app_select_annotations",
   "projectStatus": "Sandbox",
+  "imgPattern": 5,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -241,29 +242,8 @@
         "createdOn": 0,
         "items": [
           {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1715607227334,
-            "createdBy": "cristian.mankoc@symanto.com",
-            "stateChangedOn": 0
-          },
-          {
             "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1715607227334,
-            "createdBy": "cristian.mankoc@symanto.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/SAMPLE_APP_SELECT_ANNOTATIONS/datasets/new/)",
-            "createdOn": 1715607227334,
-            "createdBy": "cristian.mankoc@symanto.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
+            "text": "Improve application interface",
             "createdOn": 1715607227334,
             "createdBy": "cristian.mankoc@symanto.com",
             "stateChangedOn": 0
